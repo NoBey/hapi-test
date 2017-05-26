@@ -2,6 +2,8 @@
 
 const Hapi = require('hapi');
 
+const ss = require('./k').ss
+
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
@@ -27,3 +29,6 @@ server.start((err) => {
     }
     console.log('Server running at:', server.info.uri);
 });
+
+
+ss()
